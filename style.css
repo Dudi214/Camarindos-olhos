@@ -691,27 +691,23 @@ section{
 /* Estilo para dispositivos móveis (com largura até 768px) */
 @media (max-width: 768px) {
     .address {
-        display: flex;         /* Usa Flexbox para centralizar os itens */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center;     /* Centraliza verticalmente */
-        width: 90vw;           /* O mapa ocupa 90% da largura da tela */
-        height: 90vw;          /* A altura será igual à largura (formato quadrado) */
-        max-width: 400px;      /* Limita a largura máxima para 400px */
-        max-height: 400px;     /* Limita a altura máxima para 400px */
-        margin: 0 auto;        /* Centraliza horizontalmente dentro do contêiner */
+        width: 90vw;             /* O mapa ocupa 90% da largura da tela */
+        aspect-ratio: 1 / 1;     /* Garante que o mapa tenha sempre formato quadrado */
+        max-width: 400px;        /* Limita a largura máxima para 400px */
+        max-height: 400px;       /* Limita a altura máxima para 400px */
+        margin: 0 auto;          /* Centraliza o mapa horizontalmente */
+        display: block;          /* Garante que o mapa seja tratado como bloco */
     }
 }
 
 /* Estilo para telas muito pequenas (menor que 450px) */
 @media (max-width: 450px) {
     .address {
-        display: flex;         /* Usa Flexbox para centralizar os itens */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center;     /* Centraliza verticalmente */
-        width: 80vw;           /* O mapa ocupa 80% da largura da tela */
-        height: 80vw;          /* A altura será igual à largura (formato quadrado) */
-        max-width: 250px;      /* Limita a largura máxima em telas muito pequenas */
-        max-height: 250px;     /* Limita a altura máxima em telas muito pequenas */
-        margin: 0 auto;        /* Centraliza horizontalmente dentro do contêiner */
+        width: 80vw;             /* O mapa ocupa 80% da largura da tela */
+        aspect-ratio: 1 / 1;     /* Garante que o mapa tenha sempre formato quadrado */
+        max-width: 250px;        /* Limita a largura máxima em telas muito pequenas */
+        max-height: 250px;       /* Limita a altura máxima em telas muito pequenas */
+        margin: 0 auto;          /* Centraliza o mapa horizontalmente */
+        display: block;          /* Garante que o mapa seja tratado como bloco */
     }
 }
