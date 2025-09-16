@@ -693,8 +693,8 @@ section{
     .address {
         width: 90vw;             /* O mapa ocupa 90% da largura da tela */
         aspect-ratio: 1 / 1;     /* Garante que o mapa tenha sempre formato quadrado */
-        max-width: 400px;        /* Limita a largura máxima para 400px */
-        max-height: 400px;       /* Limita a altura máxima para 400px */
+        max-width: 300px;        /* Limita a largura máxima para 400px */
+        max-height: 300px;       /* Limita a altura máxima para 400px */
         margin: 0 auto;          /* Centraliza o mapa horizontalmente */
         display: block;          /* Garante que o mapa seja tratado como bloco */
     }
@@ -703,10 +703,10 @@ section{
 /* Estilo para telas muito pequenas (menor que 450px) */
 @media (max-width: 450px) {
     .address {
-        width: 80vw;             /* O mapa ocupa 80% da largura da tela */
+        width: 70vw;             /* O mapa ocupa 80% da largura da tela */
         aspect-ratio: 1 / 1;     /* Garante que o mapa tenha sempre formato quadrado */
-        max-width: 250px;        /* Limita a largura máxima em telas muito pequenas */
-        max-height: 250px;       /* Limita a altura máxima em telas muito pequenas */
+        max-width: 200px;        /* Limita a largura máxima em telas muito pequenas */
+        max-height: 200px;       /* Limita a altura máxima em telas muito pequenas */
         margin: 0 auto;          /* Centraliza o mapa horizontalmente */
         display: block;          /* Garante que o mapa seja tratado como bloco */
     }
