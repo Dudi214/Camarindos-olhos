@@ -691,23 +691,27 @@ section{
 /* Estilo para dispositivos móveis (com largura até 768px) */
 @media (max-width: 768px) {
     .address {
-        width: 90vw;          /* O mapa ocupa 90% da largura da tela */
-        height: 90vw;         /* A altura será igual à largura (formato quadrado) */
-        max-width: 400px;     /* Limita a largura máxima para 400px */
-        max-height: 400px;    /* Limita a altura máxima para 400px */
-        margin: 0 auto;       /* Centraliza o mapa na tela */
-        display: block;       /* Garante que o mapa se comporte como bloco */
+        display: flex;         /* Usa Flexbox para centralizar os itens */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;     /* Centraliza verticalmente */
+        width: 90vw;           /* O mapa ocupa 90% da largura da tela */
+        height: 90vw;          /* A altura será igual à largura (formato quadrado) */
+        max-width: 400px;      /* Limita a largura máxima para 400px */
+        max-height: 400px;     /* Limita a altura máxima para 400px */
+        margin: 0 auto;        /* Centraliza horizontalmente dentro do contêiner */
     }
 }
 
 /* Estilo para telas muito pequenas (menor que 450px) */
 @media (max-width: 450px) {
     .address {
-        width: 80vw;          /* O mapa ocupa 80% da largura da tela */
-        height: 80vw;         /* A altura será igual à largura (formato quadrado) */
-        max-width: 250px;     /* Limita a largura máxima em telas muito pequenas */
-        max-height: 250px;    /* Limita a altura máxima em telas muito pequenas */
-        margin: 0 auto;       /* Centraliza o mapa na tela */
-        display: block;       /* Garante que o mapa se comporte como bloco */
+        display: flex;         /* Usa Flexbox para centralizar os itens */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;     /* Centraliza verticalmente */
+        width: 80vw;           /* O mapa ocupa 80% da largura da tela */
+        height: 80vw;          /* A altura será igual à largura (formato quadrado) */
+        max-width: 250px;      /* Limita a largura máxima em telas muito pequenas */
+        max-height: 250px;     /* Limita a altura máxima em telas muito pequenas */
+        margin: 0 auto;        /* Centraliza horizontalmente dentro do contêiner */
     }
 }
