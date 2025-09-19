@@ -656,60 +656,40 @@ section{
 
 } 
 
-/* Estilo padrão */
 .address {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    max-width: 700px; /* Mantém o container menor no desktop */
+    margin: 0 auto;
 }
 
-/* Estilo para o título dentro de .address */
-.address .title {
-    
-     text-transform: uppercase;
-     font-size: 3.5rem;
-     color:#fff;
+/* Ajusta o mapa (iframe) para desktop */
+.address iframe {
+    width: 600px; /* Largura fixa para desktop */
+    height: 450px; /* Altura fixa para desktop */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-/* Estilo para dispositivos móveis */
-@media (max-width: 768px) {
+/* Para telas menores que 750px o iframe volta a ocupar 100% do container */
+@media (max-width: 750px) {
     .address {
-        font-size: 1.4rem;  /* Ajuste a fonte para telas menores */
-        padding: 1rem;      /* Ajuste o padding */
+        max-width: 100%;
+        padding: 0.5rem 1rem;
+    }
+
+    .address iframe {
+        width: 100%; /* largura total do container */
+        height: auto; /* ajusta altura proporcionalmente */
     }
 }
 
-/* Estilo para telas muito pequenas (menor que 450px) */
+/* Responsividade para telas muito pequenas, menor que 450px */
 @media (max-width: 450px) {
-    .address {
-        font-size: 1.1rem;  /* Fonte ainda menor para telas muito pequenas */
-        padding: 0.6rem;    /* Menos padding em telas menores */
-    }  
-}
-
-
-/* Estilo para dispositivos móveis (com largura até 768px) */
-@media (max-width: 768px) {
-    .address {
-        width: 90%;               /* O mapa ocupa 90% da largura da tela */
-        height: 0;                /* Inicializa a altura */
-        padding-bottom: 90%;      /* Garante que a altura seja igual à largura (formato quadrado) */
-        max-width: 300px;         /* Limita a largura máxima para 300px */
-        max-height: 300px;        /* Limita a altura máxima para 300px */
-        margin: 0 auto;           /* Centraliza o mapa horizontalmente */
-        display: block;           /* Garante que o mapa seja tratado como bloco */
-    }
-}
-
-/* Estilo para telas muito pequenas (menor que 450px) */
-@media (max-width: 450px) {
-    .address {
-        width: 80%;               /* O mapa ocupa 80% da largura da tela */
-        height: 0;                /* Inicializa a altura */
-        padding-bottom: 80%;      /* Garante que a altura seja igual à largura (formato quadrado) */
-        max-width: 200px;         /* Limita a largura máxima em telas muito pequenas */
-        max-height: 200px;        /* Limita a altura máxima em telas muito pequenas */
-        margin: 0 auto;           /* Centraliza o mapa horizontalmente */
-        display: block;           /* Garante que o mapa seja tratado como bloco */
+    .address .title {
+        font-size: 1.8rem;
     }
 }
